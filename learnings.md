@@ -1,6 +1,6 @@
 # Project Learnings
 
-## File Typesd
+## File Types
 
 I faced some difficulties introducing new files (eg. dto files) to the lambda package. I had initially named the files `.js` instead of `.mjs`. However, since this was a node.js project without any initial setup, the .js files could not be found on AWS.
 `.mjs` files are treated as ES Modules which uses `import` and `export` syntax.
