@@ -143,7 +143,7 @@ const batchAddBank = async (requests) => {
 const getBankName = async (instNum) => {
   console.log(instNum, "instNUm");
   if (!instNum) {
-    return responseBuilder(400, "Inst Code must not be empty");
+    return responseBuilder(400, "instNum must not be empty");
   }
   const params = {
     ...param,
