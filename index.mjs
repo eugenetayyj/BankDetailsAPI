@@ -78,12 +78,21 @@ export const handler = async (event) => {
         }
         break;
     }
+    response.headers = {
+      ...response.headers,
+      "Access-Control-Allow-Origin": "*", 
+      "Access-Control-Allow-Credentials": true,
+    };
     return response;
   } catch (e) {
     console.error(e); // Log the error for debugging
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Internal Server Error" }),
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': true,
+      },
     };
   }
 };
