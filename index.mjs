@@ -80,7 +80,7 @@ export const handler = async (event) => {
     }
     response.headers = {
       ...response.headers,
-      "Access-Control-Allow-Origin": "*", 
+      "Access-Control-Allow-Origin": "https://master.d192lb2rt8wqcs.amplifyapp.com", 
       "Access-Control-Allow-Credentials": true,
     };
     return response;
