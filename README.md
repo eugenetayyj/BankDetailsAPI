@@ -4,6 +4,10 @@
 
 This codebase is part of an AWS project designed to provide a lightweight set of APIs. It leverages AWS services such as API Gateway, Lambda, and DynamoDB to create a robust and scalable infrastructure.
 
+## Access the API Frontend
+
+You can access the API frontend [here](https://master.d192lb2rt8wqcs.amplifyapp.com/).
+
 ## Main Components
 
 The main entry point of the application is the `index.mjs` file, which contains the handler function for an AWS Lambda. This Lambda function is structured to use the Lambda Proxy integration with API Gateway. 
