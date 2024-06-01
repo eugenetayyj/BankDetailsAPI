@@ -80,7 +80,8 @@ export const handler = async (event) => {
     }
     response.headers = {
       ...response.headers,
-      "Access-Control-Allow-Origin": "https://master.d192lb2rt8wqcs.amplifyapp.com", 
+      "Access-Control-Allow-Origin":
+        "https://master.d192lb2rt8wqcs.amplifyapp.com",
       "Access-Control-Allow-Credentials": true,
     };
     return response;
@@ -90,8 +91,8 @@ export const handler = async (event) => {
       statusCode: 500,
       body: JSON.stringify({ error: "Internal Server Error" }),
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Credentials': true,
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true,
       },
     };
   }
@@ -183,6 +184,11 @@ const addAndUpdateBank = async (request, method) => {
     Item: {
       instNum: { S: request.instNum },
       instName: { S: request.instName },
+      instAddress: { S: request.instAddress },
+      instCity: { S: request.instCity },
+      instState: { S: request.instState },
+      instMICR: { S: request.instMICR },
+      instZip: { S: request.instZip },
     },
   };
   try {

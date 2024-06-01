@@ -31,7 +31,7 @@ The motivation behind this project was to create a cost-effective alternative to
 By replicating the functionality of the original API and hosting it on AWS, this project aims to provide the same value to users while reducing their costs.
 
 ## AWS Infrastructure
-![alt text](image.png)  
+![alt text](image-2.png)  
 [Link to Design](https://www.figma.com/file/6mJuiHg02PaUauugLAe5jo/Untitled?type=design&node-id=0%3A1&mode=dev&t=MMf4z1UdkeQighjr-1)
 
 
